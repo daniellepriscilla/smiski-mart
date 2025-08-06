@@ -1,64 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smiski Mart</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smiski Mart</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
-    
-    <!-- Navbar Start -->
-     <nav class="navbar">
-        <a href="#" class="navbar-logo">SMISKI MART</a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">SMISKI MART</a>
 
-        <div class="navbar-nav">
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#product">Products</a>
-            <a href="#contact">Where To Buy</a>
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Products</a>
+      <a href="#contact">Where To Buy</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Welcome to <span>Smiski</span> Mart</h1>
+      <p>Your one-stop shop for all things Smiski!</p>
+      <a href="#menu" class="cta">Shop Now</a>
+    </main>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About <span>Smiski</span></h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/smiskis-removebg-preview.png" alt="About Smiski" />
+      </div>
+      <div class="content">
+        <h3>Who is Smiski?</h3>
+        <p>Smiski is a cute and mysterious character that loves to hide in the dark. These adorable little figures are perfect for collectors and fans of unique merchandise.</p>
+        <p>At Smiski Mart, we offer a wide range of Smiski products, from figurines to home decor, all designed to bring a smile to your face.</p>
+        <a href="#menu" class="cta">Explore Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="menu" class="menu">
+    <h2>Our <span>Products</span></h2>
+    <p>Explore our collection of Smiski products, including figurines, home decor, and limited edition items. Each product is crafted with care and designed to bring joy to your home.</p>
+    <div class="row">
+      <div class="menu-item">
+        <img src="img/products/1.png" alt="Product 1" class="menu-img" />
+        <h3 class="menu-title">SMISKI Blowing Bubbles</h3>
+        <p class="menu-title">Price: $10.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="img/products/2.png" alt="Product 2" class="menu-img" />
+        <h3 class="menu-title">SMISKI Skateboarding</h3>
+        <p class="menu-title">Price: $10.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="img/products/3.png" alt="Product 3" class="menu-img" />
+        <h3 class="menu-title">SMISKI Sunbathing</h3>
+        <p class="menu-title">Price: $10.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="img/products/4.png" alt="Product 4" class="menu-img" />
+        <h3 class="menu-title">SMISKI Sing-Along</h3>
+        <p class="menu-title">Price: $10.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="img/products/5.png" alt="Product 5" class="menu-img" />
+        <h3 class="menu-title">SMISKI Paper Airplane</h3>
+        <p class="menu-title">Price: $10.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="img/products/6.png" alt="Product 6" class="menu-img" />
+        <h3 class="menu-title">SMISKI Gardening</h3>
+        <p class="menu-title">Price: $10.00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact <span>Us</span></h2>
+    <div class="row">
+      <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Your Name" required />
         </div>
-
-        <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i>
-            <a href="#" id="shopping-cart"><i data-feather="search"></i>
-            <a href="#" id="hamburger-menu"><i data-feather="search"></i>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" placeholder="Email" required />
         </div>
-    </nav>
-    <!-- Navbar End -->
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="Phone Number" required />
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Hero Start -->
-     <section class="hero" id="home">
-        <main class="content">
-            <h1>Welcome to <span>Smiski</span> Mart</h1>
-            <p>Your one-stop shop for all things Smiski!</p>
-            <a href="#" class="cta">Shop Now</a>
-    </section>
-    <!-- Hero End -->
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="facebook"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="youtube"></i></a>
+    </div>
+    <div class="credit">
+      <p>&copy; 2025 Smiski Mart. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- About Start -->
-        <section class="about" id="about">
-            <h2><span>About</span>Smiski</h2>
-
-            <div class="row">
-                <div class="about-img">
-                    <img src="img/about.jpg" alt="About Smiski">
-                </div>
-
-                <div class="content">
-                    <h3>Who is Smiski?</h3>
-                    <p>Smiski is a cute and mysterious character that loves to hide in the dark. These adorable little figures are perfect for collectors and fans of unique merchandise.</p>
-                    <p>At Smiski Mart, we offer a wide range of Smiski products, from figurines to home decor, all designed to bring a smile to your face.</p>
-                    <a href="#" class="cta">Learn More</a>
-                </div>
-            </div>
-        </section>
-    <!-- About End -->
-
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+  <!--  JS -->
+  <script src="js/script.js"></script>
 </body>
 </html>

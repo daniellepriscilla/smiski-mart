@@ -1,7 +1,7 @@
-const navbarNav = document.querySelector
-('.navbar-nav');
+// Toggle hamburger menu
+const hamburger = document.querySelector('#hamburger-menu');
+const navbarNav = document.querySelector('.navbar-nav');
 
-document.querySelector('#hamburger-menu').
-onclick = () => {
-    navbarNav.classList.toggle('active');
-}
+hamburger.addEventListener('click', () => {
+  navbarNav.classList.toggle('active');
+});
